@@ -30,7 +30,7 @@ const HeroSection = () => {
           Welcome to my world of digital challenges and endless fun!
         </p>
         <div>
-          <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:bg-slate-200 text-black px-6 py-3 rounded-full mr-4">
+          <button className="bg-yellow-500 hover:bg-slate-200 text-black px-6 py-3 rounded-full mr-4">
             Hire Me
           </button>
           <button className="m-4 bg-gradient-to-r from-yellow-400 to-yellow-500 px-1 py-1  text-white rounded-full">
