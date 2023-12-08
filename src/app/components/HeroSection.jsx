@@ -2,8 +2,20 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
+  const downloadResume = () => {
+    const resumeFileName = 'Resume-Vino.docx';
+    const link = document.createElement('a');
+    link.href = `/assets/Resume-Vino.docx`;
+    link.download = resumeFileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+
   return (
     <section className="grid grid-cols-1 lg:grid-cols-12 my-4">
       <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
@@ -34,7 +46,7 @@ const HeroSection = () => {
             Hire Me
           </button>
           <button className="m-4 bg-gradient-to-r from-yellow-400 to-yellow-500 px-1 py-1  text-white rounded-full">
-            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2" onClick={downloadResume}>
               Download CV
             </span>
           </button>

@@ -111,7 +111,7 @@ const EmailSection = () => {
               name="message"
               id="message"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Enter your message here..."
+              placeholder="Feature isnt Available yet. Don't have a Domain yet. T-T"
             />
           </div>
           <button

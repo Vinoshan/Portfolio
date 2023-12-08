@@ -5,12 +5,14 @@ import AboutSection from './components/AboutSection'
 import ProjectSection from './components/ProjectSection'
 import Footer from './components/Footer'
 import EmailSection from './components/EmailSection'
+import AchievementsSection from './components/AchievementsSection'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <Navbar />
       <div className="container mx-auto mt-24 px-12 py-4">
         <HeroSection />
+        <AchievementsSection />
         <AboutSection />
         <ProjectSection />
         <EmailSection />
