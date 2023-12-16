@@ -18,6 +18,7 @@ const TAB_DATA = [
         <li>Express</li>
         <li>MongoDB</li>
         <li>Sequelize</li>
+        <li>GraphQL</li>
       </ul>
     ),
   },
@@ -26,7 +27,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Place Holder</li>
+        <li>University of Toronto School of Continuing Studies</li>
       </ul>
     ),
   },
@@ -35,7 +36,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Place Holder</li>
+        <li>University of Toronto School of Continuing Studies Certificate</li>
       </ul>
     ),
   },
