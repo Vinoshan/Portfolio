@@ -55,7 +55,7 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="gap-8 items-center py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16">
-        <Image src="/images/about.jpg" alt="About Me" width={500} height={500} />
+        <Image src="/about.jpg" alt="About Me" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-white texxt-base md:text-lg">I am a dedicated full-stack web developer who thrives on crafting engaging and adaptive web applications. My expertise encompasses JavaScript, React, Redux, Node.js, Express, MongoDB, Sequelize, HTML, CSS, and Git. With a keen enthusiasm for continuous learning, I swiftly adapt to new technologies to broaden my skill set. I thrive in collaborative environments, eagerly collaborating with fellow team members to develop outstanding applications.
