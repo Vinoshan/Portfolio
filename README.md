@@ -1,4 +1,3 @@
-```markdown
 # My Portfolio
 
 Welcome to my portfolio! This project was built using Next.js and Tailwind CSS to showcase my skills, projects, and experiences.
@@ -63,4 +62,3 @@ If you have any questions, feedback, or inquiries, feel free to contact the deve
 
 ## Contact
 Email: vinoshan@outlook.com GitHub: github.com/vinoshan LinkedIn: https://www.linkedin.com/in/vinoshank/
-```
