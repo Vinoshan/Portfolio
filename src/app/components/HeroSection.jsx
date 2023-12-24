@@ -8,7 +8,8 @@ const HeroSection = () => {
   const downloadResume = () => {
     const resumeFileName = 'Resume-Vino.docx';
     const link = document.createElement('a');
-    link.href = `/assets/Resume-Vino.docx`;
+    link.href = 'https://docs.google.com/document/d/1aukLGDmLgw48iL1tJWEOWBsIRvNJ9e494ckTfQYWgjQ';
+    link.target = '_blank';
     link.download = resumeFileName;
     document.body.appendChild(link);
     link.click();

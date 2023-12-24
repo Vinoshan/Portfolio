@@ -61,4 +61,6 @@ This project is licensed under the [MIT License](LICENSE).
 If you have any questions, feedback, or inquiries, feel free to contact the developer:
 
 ## Contact
-Email: vinoshan@outlook.com GitHub: github.com/vinoshan LinkedIn: https://www.linkedin.com/in/vinoshank/
+Email: vinoshan@outlook.com  
+GitHub: [github.com/vinoshan](https://github.com/vinoshan)  
+LinkedIn: [linkedin.com/in/vinoshank](https://www.linkedin.com/in/vinoshank/)
