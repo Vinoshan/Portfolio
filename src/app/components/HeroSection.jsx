@@ -1,10 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
+  const [imageSrc, setImageSrc] = useState('/pfp.jpg'); // Initial image
+
   const downloadResume = () => {
     const resumeFileName = 'Resume-Vino.docx';
     const link = document.createElement('a');
@@ -16,6 +18,13 @@ const HeroSection = () => {
     document.body.removeChild(link);
   };
 
+  const handleMouseEnter = () => {
+    setImageSrc('/hover-image.jpg'); // Image to show on hover
+  };
+
+  const handleMouseLeave = () => {
+    setImageSrc('/pfp.jpg'); // Restore original image on mouse leave
+  };
 
   return (
     <section className="grid grid-cols-1 lg:grid-cols-12 my-4">
@@ -29,9 +38,15 @@ const HeroSection = () => {
             sequence={[
               "Vinoshan",
               1000,
-              "Web Developer",
+              "Software Engineer",
               1000,
-              "A Gamer",
+              "AI Developer",
+              1000,
+              "A Web Developer",
+              1000,
+              "A Tech Enthusiast",
+              1000,
+              "A Problem Solver",
               1000,
             ]}
             wrapper="span"
@@ -43,26 +58,36 @@ const HeroSection = () => {
           Welcome to my world of digital challenges and endless fun!
         </p>
         <div>
-          <button className="bg-yellow-500 hover:bg-slate-200 text-black px-6 py-3 rounded-full mr-4" onClick={() => {
-            document.getElementById("contact").scrollIntoView({
-              behavior: "smooth",
-            });
-          }}>
+          <button
+            className="bg-yellow-500 hover:bg-slate-200 text-black px-6 py-3 rounded-full mr-4"
+            onClick={() => {
+              document.getElementById("contact").scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
             Hire Me
           </button>
-          <button className="m-4 bg-gradient-to-r from-yellow-400 to-yellow-500 px-1 py-1  text-white rounded-full">
-            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2" onClick={downloadResume}>
+          <button className="m-4 bg-gradient-to-r from-yellow-400 to-yellow-500 px-1 py-1 text-white rounded-full">
+            <span
+              className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2"
+              onClick={downloadResume}
+            >
               Download CV
             </span>
           </button>
         </div>
       </div>
       <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-        <div className="bg-[#181818] lg:w-[350px] lg:h-[350px] w-[250px] h-[250px] rounded-full relative">
+        <div
+          className="bg-[#181818] lg:w-[350px] lg:h-[350px] w-[250px] h-[250px] rounded-full relative"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <Image
-            src="/pfp.jpg"
+            src={imageSrc}
             alt="hero image"
-            className=" rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             width={300}
             height={300}
           />
